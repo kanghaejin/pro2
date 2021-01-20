@@ -1,0 +1,204 @@
+.inner{width:100%;
+    margin:0 auto;
+    overflow:hidden;
+    width:1280px;
+    }
+hr {clear:both;border:none}
+button{outline:0}
+#wrap{width:100%;}
+#header{}
+#section{}
+#footer{}
+
+
+.gnb {position: fixed;; left:100px;top: 500px; z-index:999999 }
+.gnb > li > a {border:1px solid transparent; box-sizing:border-box; border-radius: 50%; text-indent:-99999px;
+               background-color:#ddd;width:10px; height:10px;display: block;margin-bottom:20px;}
+.gnb > .active > a {background-color:#E61B53}
+
+
+/*********************section****************************/
+/***********************sec1************************************/
+#sec1 .slide{overflow:hideen;height:1200px;width:100%;position:relative;}
+#sec1 .slide {background:url('../images/balloon0.jpg')no-repeat; background-size:cover; }
+
+
+#sec1 p > img{width:200px;height:190px;position:absolute; padding-left:5px; bottom:50px}
+#sec1 .word{font-size:5rem;font-weight:bold;color:#fff;position:absolute;bottom:600px; right:300px;}
+
+/***********************sec2************************************/
+#sec2 .gall{height:1200px; width:100%;}
+#sec2 .gall{background:url('../images/gall.jpg') no-repeat; background-size:cover;}
+
+
+
+
+
+
+/***********************sec3************************************/
+#sec3{background-color:#fff;}
+#sec3 .intro{ float:left;
+    text-align:center; padding-left:130px;padding-bottom:80px;padding-right:50px}
+#sec3 .intro h1{font-size:40px; padding-top:80px; padding-bottom:80px;
+            color:#000; }
+#sec3 .intro p{font-size:15px;padding-bottom:30px; ;}
+#sec3 .rad{padding:10px; background:none}
+#sec3 .intro_r {width:658px; height:360px; overflow:hidden;padding-left:70px;margin-top:150px; margin-bottom:70px; }
+#sec3 .intro_r img{width:100%; }
+
+
+#buttons1 {
+    float:left;
+}
+
+#buttons1 button {
+    display: block;
+    float: left;
+    width: 124px;
+    height: 40px;
+    margin: 0 10px 20px;
+    padding: 0;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    color: #ebc000;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+
+
+/* #button1 2行目 */
+#buttons1 button {
+    border: solid 0px rgba(230,27,83,1.0);
+}
+
+/* #button1 2行目 */
+#buttons1 button {
+    position: relative;
+}
+
+#buttons1 button .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#buttons1 button span span {
+    display: block;
+    width: 224px;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    background-color:#E61B53 ;
+    border-radius: 20px;
+}
+
+
+
+
+/***********************sec4************************************/
+#sec4{background-color:#E5E5E5;height:476px;}
+#sec4 .gallery{ position:relative; padding-top:62px;
+                padding-left:100px;}
+
+#sec4 .gallery img{float:left; width:310px; height:228px;padding-right:50px;}
+#sec4 .gallery img:last-child{padding-right:0;}
+
+#sec4 .art{padding-left:84px;}
+#sec4 .inner{position: relative;}
+#sec4  h1{font-size:40px; padding-top:30px; padding-bottom:20px; }
+#sec4 .art>b{position:absolute;font-weight:normal; font-size:15px;top:340px;left:210px;;}
+#sec4 .art>b:last-child{content:'';display:block; clear:both;}
+#sec4 .more{float:right; position:absolute; top:340px; right:20px;}
+
+
+
+/***********************sec4 수상자명단, 합격자명단************************************/
+#sec4 > .inner{transition:0.5s}
+#sec4 .back_box{width:900px;margin:0 auto}
+#sec4 .back{width:450px; height:215px; overflow:hidden; float:left;padding-top:140px;
+    margin-bottom:140px;position:relative}
+    #sec4 .back .on img{transition:0.5s;}
+    #sec4 .back:hover .on img{transform: scale(1.5);}
+    #sec4 .back .ons img{transition:0.5s;}
+    #sec4 .back:hover .ons img{transform: scale(1.5);}
+    #sec4 .back > img{position:absolute;z-index:9999999; width:87px; height:15px; bottom:20px;
+                    right:48px;}
+#sec4 .list{position:absolute;z-index:999999 ; font-size:25px; color:#fff;font-weight:500;
+            padding-left:315px;padding-top:130px;}
+#sec4 .bot{position:relative}
+#sec4 .bot img{width:100%; height:auto; float:right;}
+#sec4 .on{position:absolute; padding-left:170px;
+    width:204px; height:auto;left:0;bottom:0}
+#sec4 .ons{position:absolute;padding-left:70px;
+    width:154px; height:auto;bottom:0}
+    #sec4 .on > a{display:block;}
+    #sec4 .ons > a{display:block;}
+#sec4 .on > a > img{width:204px; height:auto; bottom:0px;}
+#sec4 .ons > a > img{width:154px; height:auto; bottom:0px; }
+
+                
+
+/***********************sec6************************************/
+#sec6{margin-top:500px;}
+#sec6 h1{padding-top:30px;padding-bottom:30px}
+#sec6 .sec_l{width:600px; height:600px;;  float:left;overflow: hidden; 
+           background:url('../images/notice.PNG') no-repeat;background-position:left -100px;
+            padding:0 100px;box-sizing: border-box;}
+#sec6 .sec_l .notice{color:#fff; 
+                    text-align: center;}
+
+#sec6 .sec_l > div > div{float:left; color:#fff; position: relative;
+    box-sizing:border-box; border-top:1px solid #fff;
+    border-left:1px solid #fff;
+    width:200px;height:200px;
+    padding:20px;font-size:0.9rem
+
+}
+#sec6 .sec_l div > div >p{padding-top:85px;}
+#sec6 .sec_l >div  >div:nth-child(2n){
+    border-right:1px solid #fff
+}
+#sec6 .sec_l >div  >div:nth-child(3),#sec6 .sec_l >div  >div:nth-child(4){
+    border-bottom:1px solid #fff
+}
+#sec6 .sec_l > div>div> .icon{width:25px;height:25px; display: block;position: relative;}
+#sec6 .sec_l > div>div> .icon img{width:100%; transition:0.5s}
+#sec6 .sec_l > div>div> .icon .minus{position:absolute; left:0; top:0}
+#sec6 .sec_l > div>div:hover> .icon .plus{opacity: 0;}
+#sec6 .sec_l > div>div:hover{}
+/*#sec6 .sec_l .square_1{
+}
+
+#sec6 .sec_l .square_2{float:left; color:#fff; position:absolute; z-index:9999;
+    padding: 140px 20px 20px 20px; margin-top:140px; margin-left:300px;
+    box-sizing:border-box; border:1px solid #fff;
+}
+#sec6 .sec_l .square_3{float:left; color:#fff; position:absolute; z-index:9999;
+    padding: 140px 11px 20px 20px; margin-top:340px; margin-left:100px;
+    box-sizing:border-box; border:1px solid #fff;border-top:none;border-right:none;
+}
+#sec6 .sec_l .square_4{float:left; color:#fff; position:absolute; z-index:9999;
+    padding: 140px 37px 20px 20px; margin-top:340px; margin-left:300px;
+    box-sizing:border-box; border:1px solid #fff; border-top:none; 
+}
+*/
+#sec6 .sec_r{float:right;width:600px;height:600px;overflow: hidden;text-align:center;}
+#sec6 .sec_r p{text-align:left;padding-left:100px;font-size:0.8rem  }
+#sec6 .sec_r .more{text-align: right;font-size:0.8rem; color:#E61B53;
+                padding-right:85px;}
+#sec6 h3{font-size:17px; padding-bottom:20px; font-weight:600; text-align: left;
+    padding-left:95px}
+#sec6 .sec_r img{width:420px; height:auto;padding-bottom:30px;}
+#sec6 .sec_r .w1{padding-bottom:10px;}
+
+/***********************sec7************************************/
+#sec7 .inner{height:330px; width:1280px; overflow:hidden; border:none;
+            margin-top:300px; margin-bottom:300px;position: relative;}
+#sec7 .play{position:absolute; width:170px; height:125px; z-index:9999;
+            padding-left:500px;padding-top:100px;}
+#sec7 .play img{width:170px; height:auto} 
+#sec7 .bg img{height:auto; width:1280px; border:none; filter:brightness(50%);}

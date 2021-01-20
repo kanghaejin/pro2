@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*googleips 웹폰트 css 파일 불러오기*/
+@import url(https://fonts.googleapis.com/css?family=Galada|Nanum+Gothic|Nanum+Myeongjo);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;900&display=swap');
+/*
+font-family: 'Noto Sans KR', sans-serif;
+*/
+/*font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Galada', cursive; */
+
+/* 저장된 글꼴 파일 선언*/
+/* @font-face { font-family : font_gothic;    
+                src : url(../font/NanumGothic.ttf); }  */
+/* 웹사이트의 글꼴 파일 선언*/
+/* @font-face { font-family : font_gothic;    
+                src : url(http://uhbee.com/nanum.eot) ; }   */
+
+
+* {margin:0; padding:0;}
+html{font-size:16px; }
+body{ font-size:16px;
+      color:#6f6f6f;
+      font-family: 'Nanum Gothic', sans-serif }
+ul, ol, li{list-style-type:none}
+img, fieldset{border:none;vertical-align: middle}
+hr {clear:both;border:none}
+a {color:inherit;text-decoration:none;
+   outline:0}
+table{border-collapse:collapse}
+input, textarea,
+input::placeholder, textarea::placeholder {
+      color:inherit;font-size:inherit;
+       font-family:inherit;
+       vertical-align: middle;
+      outline: 0;}
+button{outline:0;text-decoration: none;}
+
+.sound_only{display: block;text-indent:-9999999999px;
+      height:0}
+
+/*******************사이트전체공통영역***************************/
+
+.link_on{color:#E61B53;font-weight:500;}
+#header{height:180px;background-color:#fff;}
+
+.logo{ float:left;}
+.logo img{width:240px; height:200px;}
+#nav1{width:100%;}
+#nav1 .depth1{margin-top:100px;height:30px;overflow:hidden; float:right;transition:0.5s;}
+#nav1 .depth1:after{content:'';display: block;position: absolute;left:0;top:180px;
+                   background-color:rgba(0,0,0,0.5);width:100%;height:0;
+                    z-index:99998;transition:0.5s;}
+#nav1 .depth1 > li{float:left;font-size:1rem;position:relative;}
+#nav1 .depth1 > li > a {padding-right:30px;display: block;}
+#nav1 .depth1 .nblank{padding-right:0}
+#nav1 .depth1 > li> ul{font-size: 0.9rem;line-height:1.1em; box-sizing:border-box; 
+                  padding-top:20px;position:absolute;left:0;top:100px;z-index:99999;}
+#nav1 .depth1:hover{height:200px;} 
+#nav1 .depth1:hover:after{height:200px}
+#nav1 .depth1 > li> ul> li{padding-bottom:25px;}
+#nav1 .depth1 > li> ul> li > a{color:#fff}
+.small{font-size:11.6px;}
+.nspace{padding-right:30px;}
+.search img{width:30px; height:30px;float:right;padding-right:1.2rem;}
+.lang{float:right;width:100px;height:40px; box-sizing:border-box; border:1px solid #000;}
+.lang img{width:35px; height:32px;}
+
+/****************************common*************************/
+
+/************************************footer*******************/
+#footer{position:relative}
+.garo { border: solid #cecece; border-width: 1px 0 0;bottom:0px; }
+
+#footer{background-color:#f7f7f7; border:#C2C2C2;}
+#footer .ftop{}
+#footer .f_left{float:left}
+#footer .f_left > img{width:147px; height:70px;top:-50px;}
+#footer .f_right{float:right; padding-top:35px; }
+#footer .f_right .rule{float:left}
+#footer .f_right .rule > p{float:left;padding-right:20px;}
+#footer .f_right .sns{float:left; padding-left:20px;}
+#footer .f_right .sns img{width:28px; height:28px;padding-right:20px;}
+#footer .f_right{padding-top:35px}
+#footer .f_right .call{top:60px;}
+#footer .f_right p{float:left}
+#footer .f_btm{text-align:right; margin-top:20px;}
+#footer .f_btm > p {float:left}
+#footer .f_btm .cop_r{padding-top:60px;}
+#footer .f_btm .call{margin-left:150px;margin-right:80px;}
+#footer .f_btm .expl{float:right;right:0; }
+ 

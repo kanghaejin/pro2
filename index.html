@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+<title>강혜진</title>
+  <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+   <![endif]-->
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./js/main.js"></script>
+
+<script>
+$(function(){
+    // 
+    var duration = 300;
+
+    // buttons1 :nth-child(-n+4) 대신에 태그 부분에 클래스를 주고 여기에 클래스 이름을 직접 써도 됨
+    // buttons1  1행
+    $('#buttons1 button:nth-child(-n+4)')
+        .on('mouseover', function() {
+            $(this).stop(true).animate({
+                backgroundColor: '#E61B53',
+                color: '#fff'
+            }, duration);
+        })
+        .on('mouseout', function(){
+            $(this).stop(true).animate({
+                backgroundColor: '#fff',
+                color: '#ebc000'
+            }, duration);
+        });
+
+    // buttons1  2행
+    $('#buttons1 button:nth-child(n+5):nth-child(-n+8)')
+        .on('mouseover', function(){
+            $(this).stop(true).animate({
+                borderWidth: '12px',
+                color: '#E61B53'
+            }, duration, 'easeOutSine');
+        })
+        .on('mouseout', function(){
+            $(this).stop(true).animate({
+                borderWidth: '0px',
+                color: '#ebc000'
+            }, duration, 'easeOutSine');
+        });
+
+    // buttons1  3행
+    $('#buttons1 button:nth-child(n+9)')
+        .on('mouseover', function(){
+            $(this).find('> span')
+                .stop(true).animate({width: '100%'}, duration, 'easeOutQuad');
+        })
+        .on('mouseout', function(){
+            $(this).find('> span')
+                .stop(true).animate({width: '0%'}, duration, 'easeOutQuad');
+        });
+
+});
+
+
+</script>
+</head>
+
+<body >
+ 
+<div id="wrap">
+  <header id="header">
+    <div class="inner">
+      
+      
+      <nav id="nav1" class="nav1">
+     
+        <p class="logo">
+          <a href="index.html">
+            <img src="images/logo1.svg" alt="로고">
+          </a>
+          
+        </p>
+        <ul class="depth1">
+         <li><a href="#" class="link_on ">C&C소개</a>
+            <ul>
+              <li><a href="#">C&C연합소개</a></li>
+              <li><a href="#">C&C연혁소개</a></li>
+              <li><a href="#">시스템</a></li>
+              <li><a href="#">프로그램소개</a></li>
+              
+            </ul>
+         </li>
+         <li><a href="#">캠퍼스찾기</a>
+         </li>
+         <li class="nblank"><a href="#">입시정보</a>
+            <ul>
+              <li><a href="#">입시정보</a></li>
+              <li><a href="#">입학사정관제</a></li>
+              <li><a href="#">학과/직업소개</a></li>
+              <li><a href="#">입시일정달력</a></li>
+            </ul>
+         </li>
+         <li><a href="#">갤러리</a>       
+         </li>
+         <li><a href="#">합격자 명단</a>       
+         </li>
+         <li><a href="#">커뮤니티</a>
+          <ul>
+            <li><a href="#">C&C새소식</a></li>
+            <li><a href="#" class="small">C&C자주묻는질문</a></li>
+          </ul>        
+          </li>
+          <li><a href="#">따뜻한 동행</a>       
+          </li>
+          <li class="nblank"><a href="#">미술적성테스트</a>       
+          </li>
+       </ul>
+      
+       
+      </nav>
+       
+    </div>
+    
+  </header>
+  <hr>
+
+    <ul class="gnb">
+      	<li class="active"><a href="#sec1">&nbsp;&nbsp;</a></li>
+        <li><a href="#sec2">&nbsp;&nbsp;</a></li>
+        <li><a href="#sec3">&nbsp;&nbsp;</a></li>
+        <li><a href="#sec4">&nbsp;&nbsp;</a></li>
+        <li><a href="#sec6">&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+     
+     </ul>
+  <div id="content">
+       <section id= "sec1">
+        <div class="section">
+          <div class="slide">
+         
+          <div class="inner">
+          <div class="word">
+          <p class="w1">GET IN <img src="images/logo_w.svg"></p>
+          <p class="w2">ART COLLEAGE!</p>
+          </div><!--word end-->
+          </div><!--inner end-->
+          </div>
+        </div>  <!--section end-->
+      </section><!--#sec1-->
+      <section id= "sec2">
+   
+        <div class="gall">
+        
+        </div>
+    
+      </section><!--#sec2-->
+      <section id= "sec3">
+        <div class="section">
+    
+        <div class="inner">
+        <div class="intro">
+          <h1>C&C</h1>
+          <p>
+          꿈이 있는 10대를 위한 바른 가르침, <br>
+          C&C가 앞장섭니다.<br>
+          <br>
+          C&C 미술학원의 개인별 맞춤 수업을 통한 <br>
+          특성화 된 미술교육을 단계별로 진행합니다.<br>
+          <br>
+          C&C만의 특성화 된 미술교육 STEP별 <br>
+          과정을 통하여 독창적인 시선을 갖게 하고 <br>
+          <br>
+          남다른 표현과 해석을 할 수 있도록 하는 <br>
+          과정이며, 명문대학 합격의 중요한 <br>
+          요소로 작용합니다.<br>
+          <br>
+          </p>
+          <div id="buttons1">
+          <button class="bg">C&C연혁</button>
+          <button class="bg">프로그램</button>
+        </div><!--button1 end-->
+        </div><!--intro end-->
+        <div class="intro_r">
+          <img src="images/style.jpg">
+        </div>
+      </div><!--inner end-->
+      </div>
+    
+      </section><!--#3-->
+      <section id= "sec4">
+        <div class="section">
+        <div class="inner">
+         <p class="gallery">
+        <img src="images/art1.jpg">
+      
+        <img src="images/art3.jpg">
+        <img src="images/art4.jpg">
+         </p>
+      <hr>
+      <div class="art">
+        <p><h1>갤러리</h1> <b>C&C 우수연구작</b></p>
+        
+        <p class="more"><a href="#">자세히 보기</a></p>
+        <p>
+        기초디자인 발상과표현 사고의 전환 애니메이션 
+        수채화 소묘C&C미술학원에서는 개인면담, 테스트 등을 통한 개인 성향에 맞는 반 배정 및 실기지도를 통해 개인별 입시전략을 수립하여 실전에서 최고의 실력을 발휘할 수 있도록 도와드립니다. 
+        </p>
+      </div>
+      <hr>
+      <div class="back_box">
+      <div class="back">
+        <img src="images/arrows.png">
+        <p class="list"><a href="#"> 수상자명단</a></p><div class="bot"><a href="#"> <img src="images/sky.jpg"> </a></div>
+      <p class="ons"><a href="#"><img src="images/airplane.png"></a></p>
+      
+      </div>
+    
+      <div class="back">
+        <img src="images/arrows.png">
+       <p class="list"><a href="#"> 합격자명단 </a></p><div class="bot"><a href="#"><img src="images/cave.jpg"></a></div>
+      <p class="on"><a href="#"><img src="images/back3.png"></a></p>
+      
+      </div><!--back end-->
+    </div>
+      </div><!--inner end-->
+      </div><!--section end-->
+      </section><!--#sec4-->
+
+
+      <section id= "sec6">
+        <div class="section">
+        <div class="inner">
+        <div class="sec_l">
+          <h1 class="notice">NOTICE</h1>
+          <div class="squar">
+          <div class="square_1">
+            <a href="#" class="icon"><img src="images/plus2.png" class="plus">
+            <img src="images/minus.png" class="minus">
+            </a>
+            <p>[C&C웹드라마] 첫번째,<br> 사랑하는 마음</p>
+          </div>
+          <div class="square_2">
+            <a href="#" class="icon"> <img src="images/plus2.png" class="plus">
+              <img src="images/minus.png" class="minus">
+            </a>
+           <p> [C&C웹드라마] 두번째,<br> 오늘의 미소로</p>
+          </div>
+          <div class="square_3">
+            <a href="#" class="icon"> <img src="images/plus2.png"  class="plus">
+              <img src="images/minus.png" class="minus">
+            </a>
+            <p> [C&C웹드라마] 공감영상<br>[실기대회 대참사편]</p>
+          </div>
+          <div class="square_4">
+            <a href="#" class="icon"> <img src="images/plus2.png"  class="plus">
+              <img src="images/minus.png" class="minus">
+            </a>
+            <p> [C&C웹드라마] C&C <br>부천캠퍼스 오픈</p>
+          </div>
+        </div>
+        </div>
+        <div class="sec_r">
+          <h1>LOCATION</h1>
+          <img src="images/map.PNG">
+          <h3>유한회사 씨앤씨 미술 교육 지원센터</h3>
+          <p class="w1">
+            <span>주소</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            서울특별시 송파구 충민로 66<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;가든파이브라이프
+          </p>
+          <p>
+            <span>연락처</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            성해용 602-86-01018<br>
+          </p>
+          <p class="more"><a href="#">교통정보 더보기></a></p>
+        
+       </div>
+      </div><!--inner end-->
+    </div>
+      </section><!--#sec6-->
+
+
+      <section id= "sec7">
+        <div class="section">
+      <div class="inner">
+      <p class="play"><img src="images/play.png"></p>
+      <div class="bg"><img src="images/commu.PNG"></div>
+    </div>
+    </div><!--section end -->
+  
+  
+   
+  </div><!--#content-->
+  
+  <footer id="footer">
+   
+    <div class="inner">
+      <div class="ftop">
+      <div class="f_left">
+        <img src="images/logo.png">
+      
+      </div>
+      <div class="f_right">
+          <div class="rule">
+          <p>개인정보 취급 방침</p><p>이용약관</p><p>이메일무단수집거부</p>
+          <p>인트라넷</p>
+          </div>
+      <p class="sns"><a href="#"><img src="images/youtu.png"></a>
+        <a href="#"><img src="images/insta.png"></a>
+        <a href="#"><img src="images/blog.png"></a>
+        <a href="#"><img src="images/face.png"></a>
+      </p>
+      </div>
+    </div><!--ftop end-->
+  </div><!--inner end-->
+    <hr class="garo">
+    <div class="inner">  
+    <div class="f_btm">
+        
+      <p class="cop_r">COPYRIGHT CNCART ALL RIGHTS RESERVED</p>
+      <p class="call">홈페이지 관련기타문의<br>
+        070-8815-2397
+      </p>
+      <p class="expl">본 사이트는 2021년 프론트엔드디자인 교육과정을 이수한<br>
+        포트폴리오 저작물이므로 불법 복제는 불가하며 <br>
+        사용된 이미지는 무료 이미지 및 OOO 업체의 이미지를 편집하여 사용하였으므로 <br>
+        저작권은 해당 기업 및 이미지 저작자에게 있음을 알려드립니다.<br>
+        문제의 소지가 있으면 3691214@naver.com로 연락 주시기 바랍니다.</p>
+        </div><!--bottom end-->
+        </div><!--inner end-->
+    </div>
+    </footer>
+
+
+
+
+</div>
+
+</body>
+
+</html>
